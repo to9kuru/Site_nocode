@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.left-side, .right-side {
+    box-sizing: border-box;
+}
+
+.left-side {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.left-side h1 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.output-container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    overflow: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.right-side {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.editor-container {
+    height: 90%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.editor {
+    background: #e9e9e9;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="url"],
+textarea,
+input[type="color"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="color"] {
+    height: 40px;
+    padding: 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.sns-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.sns-icons a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+}
+
+.sns-icons .twitter {
+    background-image: url('twitter-icon.png'); /* 必要に応じてアイコンのパスを変更 */
+}
+
+.sns-icons .instagram {
+    background-image: url('instagram-icon.png'); /* 必要に応じてアイコンのパスを変更 */
+}
+
+.sns-icons .youtube {
+    background-image: url('youtube-icon.png'); /* 必要に応じてアイコンのパスを変更 */
+}

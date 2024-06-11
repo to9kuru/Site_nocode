@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介ページ作成ツール</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>自己紹介ページ作成ツール</h1>
+            <div id="output" class="output-container"></div>
+        </div>
+        <div class="right-side">
+            <div class="editor-container">
+                <div class="editor">
+                    <form id="intro-form">
+                        <label for="name">名前:</label>
+                        <input type="text" id="name" name="name" oninput="generateIntro()"><br>
+
+                        <label for="bio">自己紹介:</label>
+                        <textarea id="bio" name="bio" oninput="generateIntro()"></textarea><br>
+
+                        <label for="twitter">Twitter:</label>
+                        <input type="url" id="twitter" name="twitter" oninput="generateIntro()"><br>
+
+                        <label for="instagram">Instagram:</label>
+                        <input type="url" id="instagram" name="instagram" oninput="generateIntro()"><br>
+
+                        <label for="youtube">YouTube:</label>
+                        <input type="url" id="youtube" name="youtube" oninput="generateIntro()"><br>
+
+                        <label for="profile-pic">プロフィール画像:</label>
+                        <input type="file" id="profile-pic" name="profile-pic" accept="image/*" onchange="generateIntro()"><br>
+
+                        <label for="bg-color">背景色:</label>
+                        <input type="color" id="bg-color" name="bg-color" onchange="generateIntro()"><br>
+
+                        <label for="font-color">文字色:</label>
+                        <input type="color" id="font-color" name="font-color" onchange="generateIntro()"><br>
+
+                        <label for="font-size">文字サイズ:</label>
+                        <select id="font-size" name="font-size" onchange="generateIntro()">
+                            <option value="16px">16px</option>
+                            <option value="18px">18px</option>
+                            <option value="20px">20px</option>
+                            <option value="24px">24px</option>
+                            <option value="28px">28px</option>
+                        </select><br>
+
+                        <label for="font-family">フォント:</label>
+                        <select id="font-family" name="font-family" onchange="generateIntro()">
+                            <option value="Arial">Arial</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Times New Roman">Times New Roman</option>
+                            <option value="Courier New">Courier New</option>
+                        </select><br>
+
+                        <label for="layout">レイアウト:</label>
+                        <select id="layout" name="layout" onchange="generateIntro()">
+                            <option value="layout1">レイアウト1</option>
+                            <option value="layout2">レイアウト2</option>
+                            <option value="layout3">レイアウト3</option>
+                        </select><br>
+                    </form>
+                </div>
+            </div>
+            <button id="download-btn" onclick="downloadCode()">コードをダウンロード</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
